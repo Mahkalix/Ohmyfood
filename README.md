@@ -1,7 +1,13 @@
 
 # Ohmyfood
 <svg src="./images/logo/ohmyfood.png" alt="logo" class="logo">
-.logo {color: #white;'}
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 My mission was to develop a mobile first site that lists gourmet restaurant menus. In addition to the classic reservation systems, guests will be able to compose their meal menu so that the dishes are ready on arrival. No more waiting at the restaurant!
 
