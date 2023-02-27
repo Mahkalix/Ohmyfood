@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .section-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+header .section-logo .logo {
+  display: flex;
+  height: 34px;
+  width: 200px;
+  padding: 10px;
+}
+header .section-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  background: linear-gradient(180deg, rgb(190, 190, 190) 0%, #EAEAEA 20%);
+}
+header .section-location .fa-location-dot {
+  display: flex;
+  height: 16px;
+  width: 12px;
+  color: #353535;
+}
+header .section-location h1 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 17px;
+  color: #353535;
+}/*# sourceMappingURL=main.css.map */
