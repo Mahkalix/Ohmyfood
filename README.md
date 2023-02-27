@@ -2,7 +2,7 @@
 # Ohmyfood
 ![image](https://user-images.githubusercontent.com/72757068/151578719-f29ef6b6-ede8-4392-a2cf-9e059f6b2f42.png)
 
-## My mission was to develop a mobile first site that lists gourmet restaurant menus. In addition to the classic reservation systems, guests will be able to compose their meal menu so that the dishes are ready on arrival. No more waiting at the restaurant!
+My mission was to develop a mobile first site that lists gourmet restaurant menus. In addition to the classic reservation systems, guests will be able to compose their meal menu so that the dishes are ready on arrival. No more waiting at the restaurant!
 
 ## Languages and Tools        
 <p align="left"> 
