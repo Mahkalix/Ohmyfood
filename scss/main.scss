@@ -1,60 +1,63 @@
-
-*, ::after , ::before{
-    margin:0;
-    padding:0;
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Roboto", sans-serif;
+    max-width: 778px;
 }
 
-/*HEADER*/ 
+/*HEADER*/
 
-header{
+header {
     display: flex;
     flex-direction: column;
 
-.logo-section{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
+    .logo-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
 
 
-.logo{
-    display: flex;
-    height: 33px;
-    width: 195px;
-    margin: 15px 0px;
-}
-}
+        .logo {
+            display: flex;
+            height: 33px;
+            width: 195px;
+            margin: 15px 0px;
+        }
+    }
 }
 
 /*LOCATION*/
 
-.location-section{
+.location-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:#EAEAEA;
+    background-color: #EAEAEA;
     background: linear-gradient(180deg, rgb(190, 190, 190) 0%, #EAEAEA 20%);
     padding: 16px 15px;
 
-.location{
-    display: flex;
-    height: 16px;
-    width: 12px;  
-    color: #353535; 
-}
+    .location {
+        display: flex;
+        height: 16px;
+        width: 12px;
+        color: #353535;
+    }
 
 
-p{
-font-size: 16px;
-font-weight: 500;
-color: #353535;
-text-align: center;
-margin-left: 17px;
-}
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #353535;
+        text-align: center;
+        margin-left: 17px;
+    }
 }
 
 
@@ -70,125 +73,220 @@ margin-left: 17px;
     padding-left: 17px;
     padding-right: 17px;
     background-color: #F7F7F7;
-  
 
-h1{
 
-font-size: 24px;
-font-weight: 700;
-text-align: center;
-margin-bottom: 18px;
-padding: 0 35px;
+    h1 {
 
-}
-p{
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
-}
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 18px;
+        padding: 0 35px;
 
-.btn-explore{
-    height: 50px;
-    width: 218px;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 27px;
-    border: transparent;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
-}
+    }
 
-.btn-explore:hover{
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
-}
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .btn-explore {
+        height: 50px;
+        width: 218px;
+        border-radius: 25px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 27px;
+        border: transparent;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+
+    .btn-explore:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
+    }
 }
 
 
 /*FUNCTIONNING*/
 
-.functionning-section{
-display: flex;
-flex-direction: column;
-height: 420px;
-margin-top: 48px;
-border: blue solid 3px;
-
-h1{
-    margin-left: 20px;
-}
-
-
-.btn-functionning{
+.functionning-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border: rgb(255, 8, 0) solid 3px;
+    height: 420px;
+    margin-top: 48px;
 
-.btn-section:hover{
-        background-color: #F5EDFF;
-}
-
-.btn-section{
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 322.49px;
-    height: 72.38px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin-bottom: 22px;
-    background: #F6F6F6;
-
-
-
-.btn-num{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    fill: #9356DC;
-    top: 50%;
-    left: 1%;
-    transform: translate(-50%, -50%);
-}
-        
-
-    
-.btn-text{
-    display: flex;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    margin-left: 27px;
+    h1 {
+        margin-left: 20px;
     }
-.icon-smartphone{
-    height: 20px;
-    width: 13.01873779296875px;
-    fill: #7E7E7E ;
-    margin-left: 35px;
+
+
+    .btn-functionning {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .btn-section:hover .icon-smartphone {
+            fill: #9356DC;
+        }
+
+        .btn-section:hover .icon-menu {
+            fill: #9356DC;
+        }
+
+        .btn-section:hover .icon-shop {
+            fill: #9356DC;
+        }
+
+        .btn-section:hover {
+            background-color: #F5EDFF;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 322.49px;
+            height: 72.38px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            margin-bottom: 22px;
+            background: #F6F6F6;
+
+
+            .btn-num {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                fill: #9356DC;
+                top: 50%;
+                left: 1%;
+                transform: translate(-50%, -50%);
+            }
+
+            .icon-smartphone {
+                height: 20px;
+                width: 13.01873779296875px;
+                fill: #7E7E7E;
+                margin-left: 35px;
+
+            }
+
+            .icon-menu {
+                fill: #7E7E7E;
+                height: 16px;
+                width: 16px;
+                margin-left: 35px;
+            }
+
+            .icon-shop {
+                fill: #7E7E7E;
+                height: 18px;
+                width: 18px;
+                margin-left: 35px;
+            }
+
+            .btn-text {
+                display: flex;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+                margin-left: 27px;
+            }
+
+        }
+    }
 }
-.icon-menu{
-    fill: #7E7E7E ;
-    height: 16px;
-    width: 16px;
-    margin-left: 35px;
-}
-.icon-shop{
-    fill: #7E7E7E;
-    height: 18px;
-    width: 18px;
-    margin-left: 35px;
-}
-}
-}
-}
+
+
+/*RESTAURANTS*/
+
+.restaurants-section {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 0 20px 20px;
+
+    }
+
+    .restaurants-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 44px;
+
+        .card-heart {
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    height: 251px;
+                    width: 335px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 15px;
+                    margin-bottom: 20px;
+
+                    .img {
+                        height: 185px;
+                        width: 100%;
+                        border-radius: 20px 20px 0 0;
+                        object-fit: cover;
+                    }
+
+                    .text-card {
+                        display: flex;
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
 
 
 
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 700;
+                            margin-left: 12.81px;
+                            margin-bottom: 5px;
+
+
+                        }
+
+                        p {
+                            font-size: 17px;
+                            font-weight: 300;
+                            margin-left: 12.81px;
+
+                        }
+                    }
+                }
+            }
+
+            .heart {
+                position: absolute;
+                top: 200px;
+                left: 290px;
+            }
+        }
+    }
+}

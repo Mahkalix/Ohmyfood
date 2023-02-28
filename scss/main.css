@@ -1,4 +1,6 @@
-*, ::after, ::before {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,6 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  max-width: 778px;
 }
 
 /*HEADER*/
@@ -96,7 +99,6 @@ header .logo-section .logo {
   flex-direction: column;
   height: 420px;
   margin-top: 48px;
-  border: blue solid 3px;
 }
 .functionning-section h1 {
   margin-left: 20px;
@@ -107,10 +109,19 @@ header .logo-section .logo {
   justify-content: center;
   align-items: center;
   height: 100%;
-  border: rgb(255, 8, 0) solid 3px;
+}
+.functionning-section .btn-functionning .btn-section:hover .icon-smartphone {
+  fill: #9356DC;
+}
+.functionning-section .btn-functionning .btn-section:hover .icon-menu {
+  fill: #9356DC;
+}
+.functionning-section .btn-functionning .btn-section:hover .icon-shop {
+  fill: #9356DC;
 }
 .functionning-section .btn-functionning .btn-section:hover {
   background-color: #F5EDFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .functionning-section .btn-functionning .btn-section {
   position: relative;
@@ -133,14 +144,6 @@ header .logo-section .logo {
   left: 1%;
   transform: translate(-50%, -50%);
 }
-.functionning-section .btn-functionning .btn-section .btn-text {
-  display: flex;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 19px;
-  margin-left: 27px;
-}
 .functionning-section .btn-functionning .btn-section .icon-smartphone {
   height: 20px;
   width: 13.018737793px;
@@ -158,4 +161,77 @@ header .logo-section .logo {
   height: 18px;
   width: 18px;
   margin-left: 35px;
+}
+.functionning-section .btn-functionning .btn-section .btn-text {
+  display: flex;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-left: 27px;
+}
+
+/*RESTAURANTS*/
+.restaurants-section {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants-section h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 0 20px 20px;
+}
+.restaurants-section .restaurants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.restaurants-section .restaurants-cards .card-heart {
+  position: relative;
+}
+.restaurants-section .restaurants-cards .card-heart a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants-section .restaurants-cards .card-heart a .card {
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+  width: 335px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.restaurants-section .restaurants-cards .card-heart a .card .img {
+  height: 185px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants-section .restaurants-cards .card-heart a .card .text-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.restaurants-section .restaurants-cards .card-heart a .card .text-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 12.81px;
+  margin-bottom: 5px;
+}
+.restaurants-section .restaurants-cards .card-heart a .card .text-card p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 12.81px;
+}
+.restaurants-section .restaurants-cards .card-heart .heart {
+  position: absolute;
+  top: 200px;
+  left: 290px;
 }/*# sourceMappingURL=main.css.map */
