@@ -11,6 +11,11 @@ body {
   max-width: 778px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /*HEADER*/
 header {
   display: flex;
@@ -91,6 +96,9 @@ header .logo-section .logo {
 }
 .tagline-section .btn-explore:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
+  transform: scale(1.06);
+  transition: ease-out 1s;
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 /*FUNCTIONNING*/
@@ -112,16 +120,24 @@ header .logo-section .logo {
 }
 .functionning-section .btn-functionning .btn-section:hover .icon-smartphone {
   fill: #9356DC;
+  transform: scale(1.1);
+  transition: ease-out 1s;
 }
 .functionning-section .btn-functionning .btn-section:hover .icon-menu {
   fill: #9356DC;
+  transform: scale(1.1);
+  transition: ease-out 1s;
 }
 .functionning-section .btn-functionning .btn-section:hover .icon-shop {
   fill: #9356DC;
+  transform: scale(1.1);
+  transition: ease-out 1s;
 }
 .functionning-section .btn-functionning .btn-section:hover {
   background-color: #F5EDFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+  transition: ease-out 1s;
 }
 .functionning-section .btn-functionning .btn-section {
   position: relative;
@@ -231,18 +247,37 @@ header .logo-section .logo {
   font-weight: 300;
   margin-left: 12.81px;
 }
-.restaurants-section .restaurants-cards .card-heart .heart {
+.restaurants-section .restaurants-cards .new {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+}
+.restaurants-section .restaurants-cards .heart-animation .heart {
+  visibility: visible;
   position: absolute;
   top: 200px;
   left: 290px;
-  stroke: black;
-  stroke-width: 1px;
-  stroke-linecap: round;
-  fill: white;
 }
-.restaurants-section .restaurants-cards .card-heart .heart:active {
-  stroke: white;
-  fill: url(#gradient);
+.restaurants-section .restaurants-cards .heart-animation .full-heart {
+  visibility: hidden;
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  opacity: 0;
+}
+.restaurants-section .restaurants-cards .heart-animation:hover .heart {
+  visibility: hidden;
+  position: absolute;
+  top: 200px;
+  left: 290px;
+}
+.restaurants-section .restaurants-cards .heart-animation:hover .full-heart {
+  visibility: visible;
+  position: absolute;
+  top: 200px;
+  left: 290px;
+  transition: 1.5s;
+  opacity: 1;
 }
 
 /*FOOTER*/
