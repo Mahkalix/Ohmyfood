@@ -175,12 +175,13 @@ header .logo-section .logo {
 .restaurants-section {
   display: flex;
   flex-direction: column;
+  background-color: #F7F7F7;
 }
 .restaurants-section h1 {
   font-size: 24px;
   font-weight: 700;
   text-align: left;
-  margin: 0 0 20px 20px;
+  margin: 51px 0 20px 20px;
 }
 .restaurants-section .restaurants-cards {
   display: flex;
@@ -234,4 +235,58 @@ header .logo-section .logo {
   position: absolute;
   top: 200px;
   left: 290px;
+  stroke: black;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  fill: white;
+}
+.restaurants-section .restaurants-cards .card-heart .heart:active {
+  stroke: white;
+  fill: url(#gradient);
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  height: 197px;
+}
+footer .logo-footer {
+  height: 27px;
+  width: 137.5816345215px;
+  margin: 22px 0 16px 25px;
+}
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+footer .footer-section .text-footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-section .text-footer p {
+  margin-bottom: 7px;
+  color: white;
+}
+footer .footer-section .text-footer .bottom {
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .footer-section .text-footer .top {
+  margin-left: 47px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .footer-section .knife-fork {
+  position: absolute;
+  top: 2px;
+  left: 25px;
+}
+footer .footer-section .help {
+  position: absolute;
+  top: 30px;
+  left: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -212,13 +212,14 @@ header {
 .restaurants-section {
     display: flex;
     flex-direction: column;
+    background-color: #F7F7F7;
 
     h1 {
 
         font-size: 24px;
         font-weight: 700;
         text-align: left;
-        margin: 0 0 20px 20px;
+        margin: 51px 0 20px 20px;
 
     }
 
@@ -286,7 +287,77 @@ header {
                 position: absolute;
                 top: 200px;
                 left: 290px;
+                stroke: black;
+                stroke-width: 1px;
+                stroke-linecap: round;
+                fill: white;
             }
+
+            .heart:active {
+                stroke: white;
+                fill: url(#gradient);
+
+            }
+        }
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    height: 197px;
+
+    .logo-footer {
+        height: 27px;
+        width: 137.58163452148438px;
+        margin: 22px 0 16px 25px;
+
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .text-footer {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin-bottom: 7px;
+                color: white;
+    
+
+            }
+
+            .bottom {
+                margin-left: 25px;
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+            .top {
+                margin-left: 47px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+        }
+
+        .knife-fork {
+            position: absolute;
+            top: 2px;
+            left: 25px;
+        }
+
+        .help {
+            position: absolute;
+            top: 30px;
+            left: 25px;
         }
     }
 }
