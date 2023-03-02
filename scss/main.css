@@ -8,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 778px;
+  min-width: 375px;
 }
 
 a {
@@ -118,7 +118,7 @@ header .logo-section .logo {
   align-items: center;
   height: 100%;
 }
-.functionning-section .btn-functionning .btn-section:hover .icon-smartphone {
+.functionning-section .btn-functionning .btn-section:hover.icon-smartphone {
   fill: #9356DC;
   transform: scale(1.1);
   transition: ease-out 1s;
@@ -207,6 +207,7 @@ header .logo-section .logo {
 }
 .restaurants-section .restaurants-cards .card-heart {
   position: relative;
+  border: #353535 solid 3px;
 }
 .restaurants-section .restaurants-cards .card-heart a {
   text-decoration: none;
@@ -216,25 +217,25 @@ header .logo-section .logo {
   display: flex;
   flex-direction: column;
   height: 251px;
-  width: 335px;
+  width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 20px;
+  border: red solid 3px;
 }
 .restaurants-section .restaurants-cards .card-heart a .card .img {
-  height: 185px;
-  width: 100%;
-  border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 185px;
+  width: 270px;
+  border-radius: 20px 20px 0 0;
 }
 .restaurants-section .restaurants-cards .card-heart a .card .text-card {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .restaurants-section .restaurants-cards .card-heart a .card .text-card h2 {
   font-size: 18px;
@@ -247,35 +248,35 @@ header .logo-section .logo {
   font-weight: 300;
   margin-left: 12.81px;
 }
-.restaurants-section .restaurants-cards .new {
+.restaurants-section .restaurants-cards .card-heart .new {
   position: absolute;
   top: 9px;
-  right: 10px;
+  right: 14px;
 }
 .restaurants-section .restaurants-cards .heart-animation .heart {
   visibility: visible;
   position: absolute;
   top: 200px;
-  left: 290px;
+  right: 24px;
 }
 .restaurants-section .restaurants-cards .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
   top: 200px;
-  left: 290px;
+  right: 24px;
   opacity: 0;
 }
 .restaurants-section .restaurants-cards .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
   top: 200px;
-  left: 290px;
+  right: 24px;
 }
 .restaurants-section .restaurants-cards .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
   top: 200px;
-  left: 290px;
+  right: 24px;
   transition: 1.5s;
   opacity: 1;
 }
@@ -324,4 +325,241 @@ footer .footer-section .help {
   position: absolute;
   top: 30px;
   left: 25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*FUNCTIONNING*/
+  .functionning-section {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 48px;
+  }
+  .functionning-section h1 {
+    margin-left: 40px;
+  }
+  .functionning-section .btn-functionning {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 40px 0 40px;
+  }
+  .functionning-section .btn-functionning .btn-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    height: 72.38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 22px;
+    background: #F6F6F6;
+  }
+  /*RESTAURANTS*/
+  .restaurants-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+  }
+  .restaurants-section h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin: 51px 0 20px 40px;
+  }
+  .restaurants-section .restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+  .restaurants-section .restaurants-cards .lign-card {
+    display: flex;
+    height: auto;
+    width: 90%;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1224px) {
+  /*TAGLINE SECTION + BTN*/
+  .tagline-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39px;
+    padding-bottom: 57px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #F7F7F7;
+  }
+  .tagline-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+    padding: 0 35px;
+  }
+  /*FUNCTIONNING*/
+  .functionning-section {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    margin-top: 48px;
+    padding-right: 193px;
+  }
+  .functionning-section h1 {
+    margin-left: 193px;
+  }
+  .functionning-section .btn-functionning {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    margin-left: 205.51px;
+  }
+  .functionning-section .btn-functionning .btn-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 322.49px;
+    height: 72.38px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 22px;
+    background: #F6F6F6;
+  }
+  /*RESTAURANTS*/
+  .restaurants-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding-left: 193px;
+  }
+  .restaurants-section h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin: 51px 0 20px 20px;
+  }
+  .restaurants-section .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 44px;
+    overflow: scroll;
+  }
+  .restaurants-section .restaurants-cards .lign-card {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart {
+    position: relative;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a {
+    text-decoration: none;
+    color: black;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .card {
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    width: 335px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-right: 26.05px;
+    margin-bottom: 20px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .card .img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 185px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .card .text-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .card .text-card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 12.81px;
+    margin-bottom: 5px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .card .text-card p {
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 12.81px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart a .new {
+    position: absolute;
+    top: 9px;
+    right: 40px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart .heart-animation .heart {
+    visibility: visible;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart .heart-animation .full-heart {
+    visibility: hidden;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    opacity: 0;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart .heart-animation:hover .heart {
+    visibility: hidden;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+  }
+  .restaurants-section .restaurants-cards .lign-card .card-heart .heart-animation:hover .full-heart {
+    visibility: visible;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    transition: 1.5s;
+    opacity: 1;
+  }
+  /*FOOTER*/
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #353535;
+    height: 197px;
+  }
+  footer .logo-footer {
+    height: 27px;
+    width: 137.5816345215px;
+    margin: 0 120px 0px 71px;
+  }
+  footer .footer-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  footer .footer-section .text-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-section .knife-fork {
+    position: absolute;
+    top: 2px;
+    left: 25px;
+  }
+  footer .footer-section .help {
+    position: absolute;
+    top: 2px;
+    left: 240px;
+  }
 }/*# sourceMappingURL=main.css.map */

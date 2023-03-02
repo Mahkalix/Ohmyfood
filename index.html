@@ -34,7 +34,7 @@
 			<button class="btn-explore"> Explorer nos restaurants </button>
 		</a>
 	</section>
-
+	<!-- FUNCTIONNING -->
 	<section class="functionning-section">
 		<h1>Fonctionnement</h1>
 		<div class="btn-functionning">
@@ -65,9 +65,9 @@
 					<path
 						d="M17.5914 5.00461L15.6947 1.36243C15.5252 1.03547 15.2242 0.835083 14.9027 0.835083H3.09613C2.77466 0.835083 2.47365 1.03547 2.30415 1.36243L0.407495 5.00461C-0.571518 6.88547 0.296443 9.5011 2.12588 9.79993C2.25739 9.82102 2.39182 9.83157 2.52625 9.83157C3.39129 9.83157 4.15697 9.37454 4.683 8.6679C5.20904 9.37454 5.97764 9.83157 6.83976 9.83157C7.70479 9.83157 8.47047 9.37454 8.99651 8.6679C9.52254 9.37454 10.2911 9.83157 11.1533 9.83157C12.0183 9.83157 12.784 9.37454 13.31 8.6679C13.839 9.37454 14.6046 9.83157 15.4668 9.83157C15.6041 9.83157 15.7356 9.82102 15.8671 9.79993C17.7024 9.50461 18.5733 6.88899 17.5914 5.00461ZM15.4726 10.9601C15.1804 10.9601 14.891 10.9073 14.6105 10.8265V14.3351H3.38837V10.8265C3.10782 10.9038 2.8185 10.9601 2.52625 10.9601C2.35091 10.9601 2.17264 10.946 2.00022 10.9179C1.83656 10.8898 1.67583 10.8441 1.52094 10.7913V17.7101C1.52094 18.3323 1.93885 18.8351 2.45612 18.8351H15.5486C16.0659 18.8351 16.4838 18.3323 16.4838 17.7101V10.7913C16.326 10.8476 16.1681 10.8933 16.0045 10.9179C15.8262 10.946 15.6509 10.9601 15.4726 10.9601Z" />
 				</svg>
-
 				<div class="btn-text">Dégustez au restaurant</div>
 			</div>
+			
 		</div>
 	</section>
 
@@ -75,135 +75,139 @@
 	<section class="restaurants-section">
 		<h1>Restaurants</h1>
 		<div class="restaurants-cards">
-
-			<div class="card-heart">
-				<a href="#">
-					<div class="card">
-						<img class="img" src="./images/restaurants/1.jpg" alt="plat gastro">
-						<div class="text-card">
-							<h2>La palette du goût</h2>
-							<p>Ménilmontant</p>
+			<div class="lign-card">
+				
+				<div class="card-heart">
+					<a href="#">
+						<div class="card">
+							<img class="img" src="./images/restaurants/1.jpg" alt="plat gastro">
+							<div class="text-card">
+								<h2>La palette du goût</h2>
+								<p>Ménilmontant</p>
+							</div>
+							<img class="new" src="./images/icons/new.svg" alt="nouveau">
 						</div>
+					</a>
+					<div class="heart-animation">
+						<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
+								fill="url(#paint0_linear_18602_29)" />
+							<defs>
+								<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
+									y2="24.2227" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#9356DC" />
+									<stop offset="1" stop-color="#FF79DA" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+							clip-rule="evenodd">
+							<path
+								d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+						</svg>
 					</div>
-				</a>
-				<div class="heart-animation">
-					<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
-							fill="url(#paint0_linear_18602_29)" />
-						<defs>
-							<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
-								y2="24.2227" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#9356DC" />
-								<stop offset="1" stop-color="#FF79DA" />
-							</linearGradient>
-						</defs>
-					</svg>
-					<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-						clip-rule="evenodd">
-						<path
-							d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
-					</svg>
 				</div>
-				<img class="new" src="./images/icons/new.svg" alt="nouveau">
-			</div>
 
-			<div class="card-heart">
-				<a href="#">
-					<div class="card">
-						<img class="img" src="./images/restaurants/2.jpg" alt="plat gastro">
-						<div class="text-card">
-							<h2>La note enchantée</h2>
-							<p>Charonne</p>
+				<div class="card-heart">
+					<a href="#">
+						<div class="card">
+							<img class="img" src="./images/restaurants/2.jpg" alt="plat gastro">
+							<div class="text-card">
+								<h2>La note enchantée</h2>
+								<p>Charonne</p>
+							</div>
+							<img class="new" src="./images/icons/new.svg" alt="nouveau">
 						</div>
-					</div>
-				</a>
+					</a>
 
-				<div class="heart-animation">
-					<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
-							fill="url(#paint0_linear_18602_29)" />
-						<defs>
-							<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
-								y2="24.2227" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#9356DC" />
-								<stop offset="1" stop-color="#FF79DA" />
-							</linearGradient>
-						</defs>
-					</svg>
-					<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-						clip-rule="evenodd">
-						<path
-							d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
-					</svg>
-				</div>
-				<img class="new" src="./images/icons/new.svg" alt="nouveau">
-			</div>
-
-			<div class="card-heart">
-				<a href="#">
-					<div class="card">
-						<img class="img" src="./images/restaurants/3.jpg" alt="plat gastro">
-						<div class="text-card">
-							<h2>A la françcaise</h2>
-							<p>Cité Rouge</p>
-						</div>
+					<div class="heart-animation">
+						<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
+								fill="url(#paint0_linear_18602_29)" />
+							<defs>
+								<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
+									y2="24.2227" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#9356DC" />
+									<stop offset="1" stop-color="#FF79DA" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+							clip-rule="evenodd">
+							<path
+								d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+						</svg>
 					</div>
-				</a>
-				<div class="heart-animation">
-					<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
-							fill="url(#paint0_linear_18602_29)" />
-						<defs>
-							<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
-								y2="24.2227" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#9356DC" />
-								<stop offset="1" stop-color="#FF79DA" />
-							</linearGradient>
-						</defs>
-					</svg>
-					<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-						clip-rule="evenodd">
-						<path
-							d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
-					</svg>
 				</div>
 			</div>
 
-			<div class="card-heart">
-				<a href="#">
-					<div class="card">
-						<img class="img" src="./images/restaurants/4.jpg" alt="plat gastro">
-						<div class="text-card">
-							<h2>Le délice des sens</h2>
-							<p>Folie-Méricourt</p>
+			<div class="lign-card">
+				<div class="card-heart">
+					<a href="#">
+						<div class="card">
+							<img class="img" src="./images/restaurants/3.jpg" alt="plat gastro">
+							<div class="text-card">
+								<h2>A la françcaise</h2>
+								<p>Cité Rouge</p>
+							</div>
 						</div>
+					</a>
+					<div class="heart-animation">
+						<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
+								fill="url(#paint0_linear_18602_29)" />
+							<defs>
+								<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
+									y2="24.2227" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#9356DC" />
+									<stop offset="1" stop-color="#FF79DA" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+							clip-rule="evenodd">
+							<path
+								d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+						</svg>
 					</div>
-				</a>
-				<div class="heart-animation">
-					<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
-							fill="url(#paint0_linear_18602_29)" />
-						<defs>
-							<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
-								y2="24.2227" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#9356DC" />
-								<stop offset="1" stop-color="#FF79DA" />
-							</linearGradient>
-						</defs>
-					</svg>
-					<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-						clip-rule="evenodd">
-						<path
-							d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
-					</svg>
+				</div>
+
+				<div class="card-heart">
+					<a href="#">
+						<div class="card">
+							<img class="img" src="./images/restaurants/4.jpg" alt="plat gastro">
+							<div class="text-card">
+								<h2>Le délice des sens</h2>
+								<p>Folie-Méricourt</p>
+							</div>
+						</div>
+					</a>
+					<div class="heart-animation">
+						<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
+								fill="url(#paint0_linear_18602_29)" />
+							<defs>
+								<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701"
+									y2="24.2227" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#9356DC" />
+									<stop offset="1" stop-color="#FF79DA" />
+								</linearGradient>
+							</defs>
+						</svg>
+						<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+							clip-rule="evenodd">
+							<path
+								d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+						</svg>
+					</div>
 				</div>
 			</div>
 		</div>

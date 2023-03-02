@@ -8,7 +8,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    max-width: 778px;
+    min-width: 375px;
 }
 
 a {
@@ -139,7 +139,7 @@ header {
         align-items: center;
         height: 100%;
 
-        .btn-section:hover .icon-smartphone {
+        .btn-section:hover.icon-smartphone {
             fill: #9356DC;
             transform: scale(1.1);
             transition: ease-out 1s;
@@ -231,7 +231,6 @@ header {
     background-color: #F7F7F7;
 
     h1 {
-
         font-size: 24px;
         font-weight: 700;
         text-align: left;
@@ -247,27 +246,31 @@ header {
 
         .card-heart {
             position: relative;
+            border: #353535 solid 3px;
 
             a {
                 text-decoration: none;
                 color: black;
 
 
+
                 .card {
                     display: flex;
                     flex-direction: column;
                     height: 251px;
-                    width: 335px;
+                    width: 100%;
                     background: #FFFFFF;
                     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                     border-radius: 15px;
                     margin-bottom: 20px;
+                    border: red solid 3px;
+
 
                     .img {
-                        height: 185px;
-                        width: 100%;
-                        border-radius: 20px 20px 0 0;
                         object-fit: cover;
+                        height: 185px;
+                        width: 270px;
+                        border-radius: 20px 20px 0 0;
                     }
 
                     .text-card {
@@ -275,7 +278,6 @@ header {
                         height: 100%;
                         flex-direction: column;
                         justify-content: center;
-                        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
                         h2 {
                             font-size: 18px;
@@ -296,27 +298,29 @@ header {
                 }
             }
 
+            .new {
+                position: absolute;
+                top: 9px;
+                right: 14px;
+            }
+
         }
 
-        .new{
-            position: absolute;
-            top: 9px;
-            right: 10px;
-        }
+
 
         .heart-animation {
             .heart {
                 visibility: visible;
                 position: absolute;
                 top: 200px;
-                left: 290px;
+                right: 24px;
             }
 
             .full-heart {
                 visibility: hidden;
                 position: absolute;
                 top: 200px;
-                left: 290px;
+                right: 24px;
                 opacity: 0;
             }
         }
@@ -326,19 +330,17 @@ header {
                 visibility: hidden;
                 position: absolute;
                 top: 200px;
-                left: 290px;
+                right: 24px;
             }
 
             .full-heart {
                 visibility: visible;
                 position: absolute;
                 top: 200px;
-                left: 290px;
+                right: 24px;
                 transition: 1.5s;
                 opacity: 1;
             }
-
-    
         }
     }
 }
@@ -398,6 +400,300 @@ footer {
             position: absolute;
             top: 30px;
             left: 25px;
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    /*FUNCTIONNING*/
+
+    .functionning-section {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin-top: 48px;
+
+        h1 {
+            margin-left: 40px;
+        }
+
+
+        .btn-functionning {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 40px 0 40px;
+
+
+            .btn-section {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                width: 30%;
+                height: 72.38px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                margin-bottom: 22px;
+                background: #F6F6F6;
+
+            }
+        }
+    }
+
+    /*RESTAURANTS*/
+    .restaurants-section {
+        display: flex;
+        flex-direction: column;
+        background-color: #F7F7F7;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+            margin: 51px 0 20px 40px;
+
+        }
+
+        .restaurants-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 44px;
+
+            .lign-card {
+                display: flex;
+                height: auto;
+                width: 90%;
+                justify-content: space-around;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1224px) {
+
+
+    /*TAGLINE SECTION + BTN*/
+
+    .tagline-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 39px;
+        padding-bottom: 57px;
+        padding-left: 17px;
+        padding-right: 17px;
+        background-color: #F7F7F7;
+
+
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 18px;
+            padding: 0 35px;
+        }
+    }
+
+    /*FUNCTIONNING*/
+    .functionning-section {
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        margin-top: 48px;
+        padding-right: 193px;
+
+        h1 {
+            margin-left: 193px;
+        }
+
+
+        .btn-functionning {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            justify-content: space-between;
+            margin-left: 205.51px;
+
+            .btn-section {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                width: 322.49px;
+                height: 72.38px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                margin-bottom: 22px;
+                background: #F6F6F6;
+            }
+        }
+    }
+
+    /*RESTAURANTS*/
+
+    .restaurants-section {
+        display: flex;
+        flex-direction: column;
+        background-color: #F7F7F7;
+        padding-left: 193px;
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: left;
+            margin: 51px 0 20px 20px;
+
+        }
+
+        .restaurants-cards {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 44px;
+            overflow: scroll;
+
+
+            .lign-card {
+                display: flex;
+                height: auto;
+                width: 100%;
+
+                .card-heart {
+                    position: relative;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+
+
+                        .card {
+                            display: flex;
+                            flex-direction: column;
+                            height: 251px;
+                            width: 335px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                            border-radius: 15px;
+                            margin-right: 26.05px;
+                            margin-bottom: 20px;
+
+                            .img {
+                                object-fit: cover;
+                                height: 185px;
+                                width: 100%;
+                                border-radius: 20px 20px 0 0;
+                            }
+
+                            .text-card {
+                                display: flex;
+                                height: 100%;
+                                flex-direction: column;
+                                justify-content: center;
+
+                                h2 {
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    margin-left: 12.81px;
+                                    margin-bottom: 5px;
+                                }
+
+                                p {
+                                    font-size: 17px;
+                                    font-weight: 300;
+                                    margin-left: 12.81px;
+
+                                }
+                            }
+                        }
+
+                        .new {
+                            position: absolute;
+                            top: 9px;
+                            right: 40px;
+                        }
+
+                    }
+
+                    .heart-animation {
+                        .heart {
+                            visibility: visible;
+                            position: absolute;
+                            top: 200px;
+                            right: 40px;
+                        }
+
+                        .full-heart {
+                            visibility: hidden;
+                            position: absolute;
+                            top: 200px;
+                            right: 40px;
+                            opacity: 0;
+                        }
+                    }
+
+                    .heart-animation:hover {
+                        .heart {
+                            visibility: hidden;
+                            position: absolute;
+                            top: 200px;
+                            right: 40px;
+                        }
+
+                        .full-heart {
+                            visibility: visible;
+                            position: absolute;
+                            top: 200px;
+                            right: 40px;
+                            transition: 1.5s;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*FOOTER*/
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        background-color: #353535;
+        height: 197px;
+
+        .logo-footer {
+            height: 27px;
+            width: 137.58163452148438px;
+            margin: 0 120px 0px 71px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .text-footer {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .knife-fork {
+                position: absolute;
+                top: 2px;
+                left: 25px;
+            }
+
+            .help {
+                position: absolute;
+                top: 2px;
+                left: 240px;
+            }
         }
     }
 }
