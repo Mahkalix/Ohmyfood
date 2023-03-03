@@ -17,52 +17,130 @@ a {
 }
 
 @keyframes cycle1 {
-	
-    10%      { background: #F5EDFF; }
-    20%      { background: #F5EDFF; }
-    30%      { background: #F5EDFF; }
-    40%      { background: white; }
-    50%      { background: white; }
-    60%      { background: white; }
-    70%      { background: white; }
-    80%      {background: white; }
-    90%      { background: white; }
+
+    10% {
+        background: #F5EDFF;
+    }
+
+    20% {
+        background: #F5EDFF;
+    }
+
+    30% {
+        background: #F5EDFF;
+    }
+
+    40% {
+        background: white;
+    }
+
+    50% {
+        background: white;
+    }
+
+    60% {
+        background: white;
+    }
+
+    70% {
+        background: white;
+    }
+
+    80% {
+        background: white;
+    }
+
+    90% {
+        background: white;
+    }
 }
 
 @keyframes cycle2 {
-	
-    10%      { background: white; }
-    20%      { background: white }
-    30%      { background: white; }
-    40%      { background: #F5EDFF; }
-    50%      { background: #F5EDFF; }
-    60%      { background: #F5EDFF; }
-    70%      { background: white; }
-    80%      {background: white; }
-    90%      { background: white; }
+
+    10% {
+        background: white;
+    }
+
+    20% {
+        background: white
+    }
+
+    30% {
+        background: white;
+    }
+
+    40% {
+        background: #F5EDFF;
+    }
+
+    50% {
+        background: #F5EDFF;
+    }
+
+    60% {
+        background: #F5EDFF;
+    }
+
+    70% {
+        background: white;
+    }
+
+    80% {
+        background: white;
+    }
+
+    90% {
+        background: white;
+    }
 }
 
 @keyframes cycle3 {
-    10%      { background: white; }
-    20%      { background: white; }
-    30%      { background: white; }
-    40%      { background: white; }
-    50%      { background: white; }
-    60%      { background: white; }
-    70%      { background: #F5EDFF; }
-    80%      {background: #F5EDFF; }
-    90%      { background: #F5EDFF; }
+    10% {
+        background: white;
+    }
+
+    20% {
+        background: white;
+    }
+
+    30% {
+        background: white;
+    }
+
+    40% {
+        background: white;
+    }
+
+    50% {
+        background: white;
+    }
+
+    60% {
+        background: white;
+    }
+
+    70% {
+        background: #F5EDFF;
+    }
+
+    80% {
+        background: #F5EDFF;
+    }
+
+    90% {
+        background: #F5EDFF;
+    }
 }
 
 
 
-.btn-section:hover{
+.btn-section:hover {
     animation: none;
 }
 
 
 
-.red{
+.red {
     animation-duration: 5s;
     animation-delay: 0s;
     animation-play-state: running;
@@ -71,7 +149,7 @@ a {
     animation-iteration-count: infinite;
 }
 
-.yellow{
+.yellow {
     animation-duration: 5s;
     animation-delay: 0s;
     animation-play-state: running;
@@ -80,12 +158,12 @@ a {
     animation-iteration-count: infinite;
 }
 
-.blue{
+.blue {
     animation-duration: 5s;
     animation-delay: 0s;
     animation-play-state: running;
-    animation-name: cycle3; 
-    animation-timing-function:ease-in-out ;
+    animation-name: cycle3;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
@@ -211,27 +289,22 @@ header {
         justify-content: center;
         align-items: center;
         height: 100%;
-        
+
 
 
         .btn-section:hover .icon-smartphone {
             fill: #9356DC;
             transform: scale(1.1);
-            transition: ease-out 1s;
-            
-           
         }
 
         .btn-section:hover .icon-menu {
             fill: #9356DC;
             transform: scale(1.1);
-            transition: ease-out 1s;
         }
 
         .btn-section:hover .icon-shop {
             fill: #9356DC;
             transform: scale(1.1);
-            transition: ease-out 1s;
         }
 
         .btn-section:hover {
@@ -250,7 +323,6 @@ header {
             border-radius: 20px;
             margin-bottom: 22px;
             background: #F6F6F6;
-
 
             .btn-num {
                 position: absolute;
@@ -326,8 +398,6 @@ header {
                 text-decoration: none;
                 color: black;
 
-
-
                 .card {
                     display: flex;
                     flex-direction: column;
@@ -342,7 +412,7 @@ header {
                     .img {
                         object-fit: cover;
                         height: 185px;
-                        width: 270px;
+                        width: 335px;
                         border-radius: 20px 20px 0 0;
                     }
 
@@ -477,7 +547,61 @@ footer {
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1224px) {
+
+    /*FUNCTIONNING*/
+
+    .functionning-section {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin-top: 48px;
+
+        .btn-functionning {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .btn-section {
+                width: 30%;
+            }
+        }
+    }
+
+    /*RESTAURANTS*/
+
+    .restaurants-section {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin: 51px 0 20px 20px;
+        }
+
+        .restaurants-cards {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            overflow: scroll;
+
+            .card-heart {
+                margin-right: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:1224px) {
+
+
+    /*TAGLINE SECTION + BTN*/
+
+    .tagline-section {
+        h1 {
+            font-size: 40px;
+        }
+    }
 
     /*FUNCTIONNING*/
 
@@ -488,100 +612,6 @@ footer {
         margin-top: 48px;
 
         h1 {
-            margin-left: 40px;
-        }
-
-
-        .btn-functionning {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
-            margin: 0 40px 0 40px;
-
-
-            .btn-section {
-                position: relative;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                width: 30%;
-                height: 72.38px;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-                border-radius: 20px;
-                margin-bottom: 22px;
-                background: #F6F6F6;
-
-            }
-        }
-    }
-
-    /*RESTAURANTS*/
-    .restaurants-section {
-        display: flex;
-        flex-direction: column;
-        background-color: #F7F7F7;
-
-        h1 {
-            font-size: 24px;
-            font-weight: 700;
-            text-align: left;
-            margin: 51px 0 20px 40px;
-
-        }
-
-        .restaurants-cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 44px;
-
-            .lign-card {
-                display: flex;
-                height: auto;
-                width: 90%;
-                justify-content: space-around;
-
-            }
-        }
-    }
-}
-
-@media screen and (min-width:1224px) {
-
-
-    /*TAGLINE SECTION + BTN*/
-
-    .tagline-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 39px;
-        padding-bottom: 57px;
-        padding-left: 17px;
-        padding-right: 17px;
-        background-color: #F7F7F7;
-
-
-        h1 {
-            font-size: 40px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 18px;
-            padding: 0 35px;
-        }
-    }
-
-    /*FUNCTIONNING*/
-    .functionning-section {
-        display: flex;
-        flex-direction: column;
-        height: 420px;
-        margin-top: 48px;
-        padding-right: 193px;
-
-        h1 {
             margin-left: 193px;
         }
 
@@ -589,21 +619,12 @@ footer {
         .btn-functionning {
             display: flex;
             flex-direction: row;
-            height: 100%;
-            justify-content: space-between;
-            margin-left: 205.51px;
+            justify-content: space-evenly;
+            margin: 0 40px 0 193px;
+
 
             .btn-section {
-                position: relative;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                width: 322.49px;
-                height: 72.38px;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-                border-radius: 20px;
-                margin-bottom: 22px;
-                background: #F6F6F6;
+                width: 30%;
             }
         }
     }
@@ -613,120 +634,20 @@ footer {
     .restaurants-section {
         display: flex;
         flex-direction: column;
-        background-color: #F7F7F7;
-        padding-left: 193px;
 
         h1 {
-            font-size: 24px;
-            font-weight: 700;
-            text-align: left;
-            margin: 51px 0 20px 20px;
-
+            margin: 51px 0 20px 193px;
         }
 
         .restaurants-cards {
             display: flex;
             flex-direction: row;
-            margin-bottom: 44px;
+            margin: 0 0 44px 193px;
             overflow: scroll;
 
 
-            .lign-card {
-                display: flex;
-                height: auto;
-                width: 100%;
-
-                .card-heart {
-                    position: relative;
-
-                    a {
-                        text-decoration: none;
-                        color: black;
-
-
-                        .card {
-                            display: flex;
-                            flex-direction: column;
-                            height: 251px;
-                            width: 335px;
-                            background: #FFFFFF;
-                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                            border-radius: 15px;
-                            margin-right: 26.05px;
-                            margin-bottom: 20px;
-
-                            .img {
-                                object-fit: cover;
-                                height: 185px;
-                                width: 100%;
-                                border-radius: 20px 20px 0 0;
-                            }
-
-                            .text-card {
-                                display: flex;
-                                height: 100%;
-                                flex-direction: column;
-                                justify-content: center;
-
-                                h2 {
-                                    font-size: 18px;
-                                    font-weight: 700;
-                                    margin-left: 12.81px;
-                                    margin-bottom: 5px;
-                                }
-
-                                p {
-                                    font-size: 17px;
-                                    font-weight: 300;
-                                    margin-left: 12.81px;
-
-                                }
-                            }
-                        }
-
-                        .new {
-                            position: absolute;
-                            top: 9px;
-                            right: 40px;
-                        }
-
-                    }
-
-                    .heart-animation {
-                        .heart {
-                            visibility: visible;
-                            position: absolute;
-                            top: 200px;
-                            right: 40px;
-                        }
-
-                        .full-heart {
-                            visibility: hidden;
-                            position: absolute;
-                            top: 200px;
-                            right: 40px;
-                            opacity: 0;
-                        }
-                    }
-
-                    .heart-animation:hover {
-                        .heart {
-                            visibility: hidden;
-                            position: absolute;
-                            top: 200px;
-                            right: 40px;
-                        }
-
-                        .full-heart {
-                            visibility: visible;
-                            position: absolute;
-                            top: 200px;
-                            right: 40px;
-                            transition: 1.5s;
-                            opacity: 1;
-                        }
-                    }
-                }
+            .card-heart {
+                margin-right: 30px;
             }
         }
     }
@@ -737,7 +658,6 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        background-color: #353535;
         height: 197px;
 
         .logo-footer {
