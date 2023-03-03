@@ -16,6 +16,124 @@ a {
   color: white;
 }
 
+@keyframes cycle1 {
+  10% {
+    background: #F5EDFF;
+  }
+  20% {
+    background: #F5EDFF;
+  }
+  30% {
+    background: #F5EDFF;
+  }
+  40% {
+    background: white;
+  }
+  50% {
+    background: white;
+  }
+  60% {
+    background: white;
+  }
+  70% {
+    background: white;
+  }
+  80% {
+    background: white;
+  }
+  90% {
+    background: white;
+  }
+}
+@keyframes cycle2 {
+  10% {
+    background: white;
+  }
+  20% {
+    background: white;
+  }
+  30% {
+    background: white;
+  }
+  40% {
+    background: #F5EDFF;
+  }
+  50% {
+    background: #F5EDFF;
+  }
+  60% {
+    background: #F5EDFF;
+  }
+  70% {
+    background: white;
+  }
+  80% {
+    background: white;
+  }
+  90% {
+    background: white;
+  }
+}
+@keyframes cycle3 {
+  10% {
+    background: white;
+  }
+  20% {
+    background: white;
+  }
+  30% {
+    background: white;
+  }
+  40% {
+    background: white;
+  }
+  50% {
+    background: white;
+  }
+  60% {
+    background: white;
+  }
+  70% {
+    background: #F5EDFF;
+  }
+  80% {
+    background: #F5EDFF;
+  }
+  90% {
+    background: #F5EDFF;
+  }
+}
+.btn-section:hover {
+  animation: none;
+}
+
+.red {
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-name: cycle1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.yellow {
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-name: cycle2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.blue {
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-play-state: running;
+  animation-name: cycle3;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 /*HEADER*/
 header {
   display: flex;
@@ -118,7 +236,7 @@ header .logo-section .logo {
   align-items: center;
   height: 100%;
 }
-.functionning-section .btn-functionning .btn-section:hover.icon-smartphone {
+.functionning-section .btn-functionning .btn-section:hover .icon-smartphone {
   fill: #9356DC;
   transform: scale(1.1);
   transition: ease-out 1s;
@@ -136,8 +254,6 @@ header .logo-section .logo {
 .functionning-section .btn-functionning .btn-section:hover {
   background-color: #F5EDFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  transform: scale(1.1);
-  transition: ease-out 1s;
 }
 .functionning-section .btn-functionning .btn-section {
   position: relative;
@@ -207,7 +323,6 @@ header .logo-section .logo {
 }
 .restaurants-section .restaurants-cards .card-heart {
   position: relative;
-  border: #353535 solid 3px;
 }
 .restaurants-section .restaurants-cards .card-heart a {
   text-decoration: none;
@@ -222,7 +337,6 @@ header .logo-section .logo {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 20px;
-  border: red solid 3px;
 }
 .restaurants-section .restaurants-cards .card-heart a .card .img {
   -o-object-fit: cover;
