@@ -325,7 +325,7 @@ header .logo-section .logo {
   text-decoration: none;
   color: black;
 }
-.restaurants-section .restaurants-cards .card-heart a .card {
+.restaurants-section .restaurants-cards .card-heart a .card-without-heart {
   display: flex;
   flex-direction: column;
   height: 251px;
@@ -335,26 +335,26 @@ header .logo-section .logo {
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.restaurants-section .restaurants-cards .card-heart a .card .img {
+.restaurants-section .restaurants-cards .card-heart a .card-without-heart .img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 185px;
   width: 335px;
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
 }
-.restaurants-section .restaurants-cards .card-heart a .card .text-card {
+.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
 }
-.restaurants-section .restaurants-cards .card-heart a .card .text-card h2 {
+.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card h2 {
   font-size: 18px;
   font-weight: 700;
   margin-left: 12.81px;
   margin-bottom: 5px;
 }
-.restaurants-section .restaurants-cards .card-heart a .card .text-card p {
+.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card p {
   font-size: 17px;
   font-weight: 300;
   margin-left: 12.81px;
@@ -364,26 +364,26 @@ header .logo-section .logo {
   top: 9px;
   right: 14px;
 }
-.restaurants-section .restaurants-cards .heart-animation .heart {
+.restaurants-section .restaurants-cards .card-heart .heart-animation .heart {
   visibility: visible;
   position: absolute;
   top: 200px;
   right: 24px;
 }
-.restaurants-section .restaurants-cards .heart-animation .full-heart {
+.restaurants-section .restaurants-cards .card-heart .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
   top: 200px;
   right: 24px;
   opacity: 0;
 }
-.restaurants-section .restaurants-cards .heart-animation:hover .heart {
+.restaurants-section .restaurants-cards .card-heart .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
   top: 200px;
   right: 24px;
 }
-.restaurants-section .restaurants-cards .heart-animation:hover .full-heart {
+.restaurants-section .restaurants-cards .card-heart .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
   top: 200px;

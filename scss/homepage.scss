@@ -398,7 +398,7 @@ header {
                 text-decoration: none;
                 color: black;
 
-                .card {
+                .card-without-heart {
                     display: flex;
                     flex-direction: column;
                     height: 251px;
@@ -407,13 +407,12 @@ header {
                     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                     border-radius: 15px;
                     margin-bottom: 20px;
-
-
+                
                     .img {
                         object-fit: cover;
                         height: 185px;
                         width: 335px;
-                        border-radius: 20px 20px 0 0;
+                        border-radius: 15px 15px 0 0;
                     }
 
                     .text-card {
@@ -447,44 +446,42 @@ header {
                 right: 14px;
             }
 
-        }
+            .heart-animation {
+                .heart {
+                    visibility: visible;
+                    position: absolute;
+                    top: 200px;
+                    right: 24px;
+                }
 
-
-
-        .heart-animation {
-            .heart {
-                visibility: visible;
-                position: absolute;
-                top: 200px;
-                right: 24px;
+                .full-heart {
+                    visibility: hidden;
+                    position: absolute;
+                    top: 200px;
+                    right: 24px;
+                    opacity: 0;
+                }
             }
 
-            .full-heart {
-                visibility: hidden;
-                position: absolute;
-                top: 200px;
-                right: 24px;
-                opacity: 0;
-            }
-        }
+            .heart-animation:hover {
+                .heart {
+                    visibility: hidden;
+                    position: absolute;
+                    top: 200px;
+                    right: 24px;
+                }
 
-        .heart-animation:hover {
-            .heart {
-                visibility: hidden;
-                position: absolute;
-                top: 200px;
-                right: 24px;
-            }
-
-            .full-heart {
-                visibility: visible;
-                position: absolute;
-                top: 200px;
-                right: 24px;
-                transition: 1.5s;
-                opacity: 1;
+                .full-heart {
+                    visibility: visible;
+                    position: absolute;
+                    top: 200px;
+                    right: 24px;
+                    transition: 1.5s;
+                    opacity: 1;
+                }
             }
         }
+
     }
 }
 

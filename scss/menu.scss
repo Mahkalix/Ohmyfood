@@ -1,0 +1,58 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    min-width: 375px;
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .logo-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+
+
+        .logo {
+            display: flex;
+            height: 33px;
+            width: 195px;
+            margin: 15px 0px;
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        top: 26px;
+        left: 23px;
+
+    }
+}
+
+/*IMAGE*/
+
+    .img-container {
+        display: flex;
+
+
+        .img {
+            object-fit: cover;
+            height: 275px;
+            width: 100%;
+
+
+        }
+
+    }

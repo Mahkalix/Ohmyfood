@@ -1,0 +1,46 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-width: 375px;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+header .logo-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+header .logo-section .logo {
+  display: flex;
+  height: 33px;
+  width: 195px;
+  margin: 15px 0px;
+}
+header .arrow {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+}
+
+/*IMAGE*/
+.img-container {
+  display: flex;
+}
+.img-container .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 275px;
+  width: 100%;
+}/*# sourceMappingURL=menu.css.map */
