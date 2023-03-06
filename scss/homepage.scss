@@ -100,20 +100,16 @@ a {
     }
 
     20% {
-        background: white;
-    }
+        background: white;}
 
     30% {
-        background: white;
-    }
+        background: white;}
 
     40% {
-        background: white;
-    }
+        background: white;}
 
     50% {
-        background: white;
-    }
+        background: white;}
 
     60% {
         background: white;
@@ -496,7 +492,7 @@ footer {
 
     .logo-footer {
         height: 27px;
-        width: 137.58163452148438px;
+        width: 137.58px;
         margin: 22px 0 16px 25px;
 
     }
@@ -511,6 +507,7 @@ footer {
             flex-direction: column;
 
             p {
+                font-family: Roboto;
                 margin-bottom: 7px;
                 color: white;
             }
@@ -518,14 +515,14 @@ footer {
             .bottom {
                 margin-left: 25px;
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 300;
 
             }
 
             .top {
                 margin-left: 47px;
                 font-size: 16px;
-                font-weight: 500;
+                font-weight: 400;
             }
 
         }
@@ -534,15 +531,22 @@ footer {
             position: absolute;
             top: 2px;
             left: 25px;
+            height: 13px;
+            width: 11px;
+
+
         }
 
         .help {
             position: absolute;
             top: 30px;
             left: 25px;
+            height: 13px;
+            width: 11px;
         }
     }
 }
+
 
 @media screen and (min-width:768px) and (max-width:1224px) {
 
