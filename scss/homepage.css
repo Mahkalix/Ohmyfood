@@ -16,124 +16,86 @@ a {
   color: white;
 }
 
-@keyframes cycle1 {
-  10% {
-    background: #F5EDFF;
+/*LOADER*/
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5EDFF;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  animation: disapear 3s forwards;
+  transform-origin: center;
+}
+.loader .card-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: float 3s ease-in-out infinite;
+}
+.loader .card-loader .chef {
+  width: 200px;
+  height: 200px;
+}
+.loader .card-loader .word {
+  margin-top: 20px;
+  font-size: 12px;
+  animation: fontAnim 2s ease-in-out infinite;
+}
+
+@keyframes fontAnim {
+  0% {
+    width: 7ch;
   }
-  20% {
-    background: #F5EDFF;
+  16% {
+    width: 8ch;
   }
-  30% {
-    background: #F5EDFF;
+  32% {
+    width: 9ch;
   }
-  40% {
-    background: white;
+  48% {
+    width: 10ch;
   }
-  50% {
-    background: white;
-  }
-  60% {
-    background: white;
-  }
-  70% {
-    background: white;
+  64% {
+    width: 11ch;
   }
   80% {
-    background: white;
+    width: 12ch;
   }
-  90% {
-    background: white;
+  100% {
+    width: 13ch;
   }
 }
-@keyframes cycle2 {
-  10% {
-    background: white;
-  }
-  20% {
-    background: white;
-  }
-  30% {
-    background: white;
-  }
-  40% {
-    background: #F5EDFF;
-  }
-  50% {
-    background: #F5EDFF;
-  }
-  60% {
-    background: #F5EDFF;
-  }
-  70% {
-    background: white;
+@keyframes disapear {
+  0% {
+    opacity: 1;
+    z-index: 1;
   }
   80% {
-    background: white;
+    opacity: 1;
   }
-  90% {
-    background: white;
+  88% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
   }
 }
-@keyframes cycle3 {
-  10% {
-    background: white;
-  }
-  20% {
-    background: white;
-  }
-  30% {
-    background: white;
-  }
-  40% {
-    background: white;
+@keyframes float {
+  0% {
+    transform: translatey(0px);
   }
   50% {
-    background: white;
+    transform: translatey(-20px);
   }
-  60% {
-    background: white;
-  }
-  70% {
-    background: #F5EDFF;
-  }
-  80% {
-    background: #F5EDFF;
-  }
-  90% {
-    background: #F5EDFF;
+  100% {
+    transform: translatey(0px);
   }
 }
-.btn-section:hover {
-  animation: none;
-}
-
-.red {
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-name: cycle1;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.yellow {
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-name: cycle2;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.blue {
-  animation-duration: 5s;
-  animation-delay: 0s;
-  animation-play-state: running;
-  animation-name: cycle3;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
 /*HEADER*/
 header {
   display: flex;
@@ -367,27 +329,23 @@ header .logo-section .logo {
 .restaurants-section .restaurants-cards .card-heart .heart-animation .heart {
   visibility: visible;
   position: absolute;
-  top: 200px;
-  right: 24px;
+  top: 197px;
+  right: 25px;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
-  top: 200px;
-  right: 24px;
+  top: 197px;
+  right: 25px;
   opacity: 0;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
-  top: 200px;
-  right: 24px;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
-  top: 200px;
-  right: 24px;
   transition: 1.5s;
   opacity: 1;
 }
