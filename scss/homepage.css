@@ -27,6 +27,7 @@ a {
   position: fixed;
   inset: 0;
   animation: disapear 3s forwards;
+  scrollbar-width: none;
 }
 .loader .card-loader {
   display: flex;
@@ -177,8 +178,9 @@ header .logo-section .logo {
 .tagline-section .btn-explore:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
   transform: scale(1.06);
-  transition: ease-out 1s;
+  transition: transform 1s ease-in-out;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  cursor: pointer;
 }
 
 /*FUNCTIONNING*/
@@ -197,6 +199,7 @@ header .logo-section .logo {
   justify-content: center;
   align-items: center;
   height: 100%;
+  cursor: pointer;
 }
 .functionning-section .btn-functionning .btn-section:hover .icon-smartphone {
   fill: #9356DC;
@@ -342,12 +345,14 @@ header .logo-section .logo {
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
+  cursor: pointer;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
   transition: 1.5s;
   opacity: 1;
+  cursor: pointer;
 }
 
 /*FOOTER*/

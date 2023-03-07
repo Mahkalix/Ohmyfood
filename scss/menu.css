@@ -114,12 +114,14 @@ main .heart-animation .full-heart {
 main .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
+  cursor: pointer;
 }
 main .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
   transition: 1.5s;
   opacity: 1;
+  cursor: pointer;
 }
 main .menu {
   display: flex;
@@ -155,6 +157,7 @@ main .menu .card {
   display: flex;
   position: relative;
   justify-content: space-between;
+  cursor: pointer;
 }
 main .menu .card .text-card {
   margin: 12px 0 0 11px;
@@ -241,6 +244,7 @@ main .btn-order {
   background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 main .btn-order:hover {
+  cursor: pointer;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
   transform: scale(1.06);
   transition: ease-out 1s;
