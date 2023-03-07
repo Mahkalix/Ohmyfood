@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -72,7 +73,35 @@ header {
 
 /*MAIN*/
 
+@keyframes menu {
+
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+.starter {
+
+    animation: menu 3s ease-in-out forwards;
+}
+
+.main-course {
+    animation: menu 4s ease-in-out forwards;
+
+}
+
+.dessert {
+    animation: menu 5s ease-in-out forwards;
+
+}
+
 main {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: #F6F6F6;
 
@@ -114,6 +143,7 @@ main {
         .heart {
             visibility: hidden;
             position: absolute;
+
         }
 
         .full-heart {
@@ -124,9 +154,12 @@ main {
         }
     }
 
+
     .menu {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        width: 100%;
         background-color: #F6F6F6;
         margin-top: 42px;
 
@@ -144,6 +177,7 @@ main {
             width: 40px;
             height: 3px;
             margin: 4px 0 0 13px;
+
         }
 
         .card {
@@ -344,5 +378,93 @@ footer {
     a {
         text-decoration: none;
         color: white;
+    }
+}
+
+@media screen and (min-width:1224px) {
+
+    /*MAIN*/
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 192px 0 193px;
+        background-color: #F6F6F6;
+
+        .heart-animation {
+            .heart {
+                visibility: visible;
+                position: absolute;
+                top: 10px;
+                right: 220px;
+            }
+
+            .full-heart {
+                visibility: hidden;
+                position: absolute;
+                top: 10px;
+                right: 220px;
+                opacity: 0;
+            }
+        }
+
+        .heart-animation:hover {
+            .heart {
+                visibility: hidden;
+                position: absolute;
+
+            }
+
+            .full-heart {
+                visibility: visible;
+                position: absolute;
+                transition: 1.5s;
+                opacity: 1;
+            }
+        }
+
+        .menu {
+            width: 50%;
+        }
+    }
+
+    /*FOOTER*/
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        height: 114px;
+
+        .logo-footer {
+            height: 27px;
+            width: 137.58163452148438px;
+            margin: 0 120px 0px 71px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .text-footer {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .knife-fork {
+                position: absolute;
+                top: 2px;
+                left: 25px;
+            }
+
+            .help {
+                position: absolute;
+                top: 2px;
+                left: 240px;
+            }
+        }
     }
 }

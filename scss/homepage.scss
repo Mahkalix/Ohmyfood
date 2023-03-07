@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +29,6 @@ a {
     position: fixed;
     inset: 0;
     animation: disapear 3s forwards;
-    transform-origin: center;
 
     .card-loader {
         display: flex;
@@ -84,7 +84,7 @@ a {
 @keyframes disapear {
     0% {
         opacity: 1;
-         z-index: 1;
+        z-index: 1;
     }
 
     80% {
@@ -95,6 +95,7 @@ a {
 
         opacity: 1;
         z-index: 1;
+      
     }
 
     100% {
@@ -502,7 +503,7 @@ footer {
     }
 }
 
-
+/*TABLET*/
 @media screen and (min-width:768px) and (max-width:1224px) {
 
     /*FUNCTIONNING*/
@@ -548,6 +549,7 @@ footer {
 
 }
 
+/*DESKTOP*/
 @media screen and (min-width:1224px) {
 
 
@@ -614,7 +616,7 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: row-reverse;
-        height: 197px;
+        height: 114px;
 
         .logo-footer {
             height: 27px;

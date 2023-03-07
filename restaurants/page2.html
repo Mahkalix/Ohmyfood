@@ -1,35 +1,217 @@
-.heart-animation {
+<!DOCTYPE html>
+<html lang="fr">
 
-    .heart {
-        visibility: visible;
-        position: absolute;
-        top: 200px;
-        right: 24px;
-    }
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../scss/menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+		rel="stylesheet">
+	<title>Oh my food</title>
+</head>
 
-    .full-heart {
-        visibility: hidden;
-        position: absolute;
-        top: 200px;
-        right: 24px;
-        opacity: 0;
-    }
-}
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="logo-section">
+			<img src="../images/logo/ohmyfood.png" alt="logo" class="logo">
+			<a href="../index.html">
+				<img class="arrow" alt="arrow" src="../images/icons/arrow.svg" />
+			</a>
+		</div>
+	</header>
 
-.heart-animation:hover {
-    .heart {
-        visibility: hidden;
-        position: absolute;
-        top: 200px;
-        right: 24px;
-    }
+	<!-- IMAGE -->
+	<div class="img-container">
+		<img src="../images/restaurants/2.jpg" alt="plat gastro" class="img">
+	</div>
 
-    .full-heart {
-        visibility: visible;
-        position: absolute;
-        top: 200px;
-        right: 24px;
-        transition: 2s;
-        opacity: 1;
-    }
-}
+	<!-- MAIN -->
+	<main>
+
+		<div class="blank"> </div>
+			<h1> La note enchantée </h1>
+
+			<div class="heart-animation">
+				<svg class="full-heart" width="24" height="24" viewBox="0 0 22 21" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M19.865 1.43593C17.5103 -0.753131 14.0083 -0.359381 11.847 2.07343L11.0005 3.02499L10.154 2.07343C7.99701 -0.359381 4.49076 -0.753131 2.13607 1.43593C-0.562363 3.94843 -0.704161 8.45781 1.71068 11.1812L10.0251 20.5469C10.5622 21.1516 11.4345 21.1516 11.9716 20.5469L20.2861 11.1812C22.7052 8.45781 22.5634 3.94843 19.865 1.43593Z"
+						fill="url(#paint0_linear_18602_29)" />
+					<defs>
+						<linearGradient id="paint0_linear_18602_29" x1="11.0002" y1="-5.4601" x2="0.326701" y2="24.2227"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#9356DC" />
+							<stop offset="1" stop-color="#FF79DA" />
+						</linearGradient>
+					</defs>
+				</svg>
+				<svg class="heart" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+					clip-rule="evenodd">
+					<path
+						d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+				</svg>
+		</div>
+
+		<section class="menu starter">
+			<h2>ENTRÉES</h2>
+			<div class="lign"></div>
+
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Ravioles de foie gras </h3>
+					<p>Accompagnées de leur crème à la truffe</p>
+				</div>
+				<div class="price"> 25€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Caviar osciètre </h3>
+					<p>Sur blini à la farine de blé noir</p>
+				</div>
+				<div class="price"> 35€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Homard et espuma de potiron</h3>
+					<p>Marinés aux zestes d'orange </p>
+				</div>
+				<div class="price"> 20€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Foie gras de canard cuit entier</h3>
+					<p>Confiture de figue et pain toasté </p>
+				</div>
+				<div class="price"> 35€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+		</section>
+
+		<section class="menu main-course">
+			<h2>PLATS</h2>
+			<div class="lign"></div>
+
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Noix de coquilles Saint-Jacques</h3>
+					<p>Sur lit de purée de céleri-rave</p>
+				</div>
+				<div class="price"> 40€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Langoustine poêlée</h3>
+					<p>Purée de patate douce</p>
+				</div>
+				<div class="price"> 35€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Mijoté de queue de bœuf </h3>
+					<p>Et riz sauvage aux zestes de citron</p>
+				</div>
+				<div class="price"> 44€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+		</section>
+
+		<section class="menu dessert">
+			<h2>DESSERTS</h2>
+			<div class="lign"></div>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Macaron noisette et chocolat</h3>
+					<p>Glace au caramel brun et sel de Guérande</p>
+				</div>
+				<div class="price"> 18€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Baba au rhum revisité </h3>
+					<p>Avec son coulis de citron</p>
+				</div>
+				<div class="price"> 22€</div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+			<article class="card">
+				<div class="text-card">
+					<h3>Tarte au citron meringuée  </h3>
+					<p>Déstructurée</p>
+				</div>
+				<div class="price"> 23€ </div>
+				<div class="btn-check">
+					<img class="check" src="../images/icons/Check.svg" alt="Check">
+				</div>
+			</article>
+
+		</section>
+
+		<section class="section-order">
+			<a href="#">
+				<button class="btn-order"> Commander </button>
+			</a>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<img class="logo-footer" src="../images/logo/ohmyfood@2x.svg" alt="logo footer">
+		<section class="footer-section">
+			<div class="text-footer">
+				<p class="top"> Proposer un restaurant</p>
+				<p class="top"> Devenir partenaire</p>
+				<p class="bottom"> Mentions légales</p>
+				<p class="bottom">
+					<a href="mailto:Ohmyfood@gmail.com">Contact</a>
+				</p>
+			</div>
+			<img class="knife-fork" src="../images/icons/knife&fork.svg" alt="icon-knife-fork">
+			<img class="help" src="../images/icons/help.svg" alt="icon-help">
+
+		</section>
+	</footer>
+
+</body>
+
+</html>
