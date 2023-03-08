@@ -29,7 +29,6 @@ a {
     position: fixed;
     inset: 0;
     animation: disapear 3s forwards;
-    scrollbar-width: none;
 
 
     .card-loader {
@@ -97,7 +96,7 @@ a {
 
         opacity: 1;
         z-index: 1;
-      
+
     }
 
     100% {
@@ -351,6 +350,7 @@ header {
         align-items: center;
         margin-bottom: 44px;
 
+
         .card-heart {
             position: relative;
 
@@ -533,6 +533,23 @@ footer {
 
     /*RESTAURANTS*/
 
+    .restaurants-cards::-webkit-scrollbar {
+        
+        height: 10px;
+        background-color: #F5EDFF;
+    }
+
+    .restaurants-cards::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+
+    .restaurants-cards::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
     .restaurants-section {
         display: flex;
         flex-direction: column;
@@ -546,14 +563,16 @@ footer {
             flex-direction: row;
             margin-left: 20px;
             overflow: scroll;
+            overflow-y: hidden;
+
 
             .card-heart {
                 margin-right: 30px;
             }
         }
     }
-
 }
+
 
 /*DESKTOP*/
 @media screen and (min-width:1224px) {
@@ -594,6 +613,21 @@ footer {
     }
 
     /*RESTAURANTS*/
+    
+    .restaurants-cards::-webkit-scrollbar {
+        height: 10px;
+        background-color: #F5EDFF;
+    }
+
+    .restaurants-cards::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+    }
+
+    .restaurants-cards::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
 
     .restaurants-section {
         display: flex;
@@ -608,6 +642,7 @@ footer {
             flex-direction: row;
             margin: 0 0 44px 193px;
             overflow: scroll;
+            overflow-y: hidden;
 
 
             .card-heart {

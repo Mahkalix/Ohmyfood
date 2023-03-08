@@ -60,9 +60,11 @@ header .arrow {
 @keyframes menu {
   0% {
     transform: translateX(100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0px);
+    opacity: 1;
   }
 }
 .starter {
@@ -92,31 +94,36 @@ main .blank {
   border-radius: 40px 40px 0 0;
   background-color: #F6F6F6;
 }
-main h1 {
+main .title-heart {
+  width: 400px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+main .title-heart h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
-  margin-left: 17px;
 }
-main .heart-animation .heart {
+main .title-heart .heart-animation .heart {
   visibility: visible;
   position: absolute;
-  top: 10px;
-  right: 41px;
+  top: 8px;
+  right: 20px;
 }
-main .heart-animation .full-heart {
+main .title-heart .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
-  top: 10px;
-  right: 41px;
+  top: 8px;
+  right: 20px;
   opacity: 0;
 }
-main .heart-animation:hover .heart {
+main .title-heart .heart-animation:hover .heart {
   visibility: hidden;
   position: absolute;
   cursor: pointer;
 }
-main .heart-animation:hover .full-heart {
+main .title-heart .heart-animation:hover .full-heart {
   visibility: visible;
   position: absolute;
   transition: 1.5s;
