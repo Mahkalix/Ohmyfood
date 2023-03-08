@@ -281,15 +281,10 @@ header .logo-section .logo {
   flex-direction: column;
   align-items: center;
   margin-bottom: 44px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 .restaurants-section .restaurants-cards .card-heart {
-  position: relative;
-}
-.restaurants-section .restaurants-cards .card-heart a {
-  text-decoration: none;
-  color: black;
-}
-.restaurants-section .restaurants-cards .card-heart a .card-without-heart {
   display: flex;
   flex-direction: column;
   height: 251px;
@@ -298,27 +293,33 @@ header .logo-section .logo {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 20px;
+  position: relative;
 }
-.restaurants-section .restaurants-cards .card-heart a .card-without-heart .img {
+.restaurants-section .restaurants-cards .card-heart a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+.restaurants-section .restaurants-cards .card-heart a .img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 185px;
-  width: 335px;
+  width: 100%;
   border-radius: 15px 15px 0 0;
 }
-.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card {
+.restaurants-section .restaurants-cards .card-heart a .text-card {
   display: flex;
-  height: 100%;
+  margin-top: 5px;
   flex-direction: column;
   justify-content: center;
 }
-.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card h2 {
+.restaurants-section .restaurants-cards .card-heart a .text-card h2 {
   font-size: 18px;
   font-weight: 700;
   margin-left: 12.81px;
   margin-bottom: 5px;
 }
-.restaurants-section .restaurants-cards .card-heart a .card-without-heart .text-card p {
+.restaurants-section .restaurants-cards .card-heart a .text-card p {
   font-size: 17px;
   font-weight: 300;
   margin-left: 12.81px;
@@ -331,24 +332,23 @@ header .logo-section .logo {
 .restaurants-section .restaurants-cards .card-heart .heart-animation .heart {
   visibility: visible;
   position: absolute;
-  top: 197px;
-  right: 25px;
+  right: 14px;
+  top: 200px;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
-  top: 197px;
-  right: 25px;
+  top: 10px;
   opacity: 0;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .heart {
   visibility: hidden;
-  position: absolute;
   cursor: pointer;
+  top: 10px;
 }
 .restaurants-section .restaurants-cards .card-heart .heart-animation:hover .full-heart {
   visibility: visible;
-  position: absolute;
+  top: 10px;
   transition: 1.5s;
   opacity: 1;
   cursor: pointer;
@@ -452,6 +452,25 @@ footer .footer-section .help {
   }
   .restaurants-section .restaurants-cards .card-heart {
     margin-right: 30px;
+    height: 251px;
+    width: 335px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .restaurants-section .restaurants-cards .card-heart a {
+    text-decoration: none;
+    color: black;
+  }
+  .restaurants-section .restaurants-cards .card-heart a .img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 185px;
+    width: 335px;
+    border-radius: 15px 15px 0 0;
   }
 }
 /*DESKTOP*/
@@ -502,12 +521,32 @@ footer .footer-section .help {
   .restaurants-section .restaurants-cards {
     display: flex;
     flex-direction: row;
-    margin: 0 0 44px 193px;
+    margin-left: 20px;
     overflow: scroll;
     overflow-y: hidden;
+    margin: 0 0 44px 193px;
   }
   .restaurants-section .restaurants-cards .card-heart {
     margin-right: 30px;
+    height: 251px;
+    width: 335px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .restaurants-section .restaurants-cards .card-heart a {
+    text-decoration: none;
+    color: black;
+  }
+  .restaurants-section .restaurants-cards .card-heart a .img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 185px;
+    width: 335px;
+    border-radius: 15px 15px 0 0;
   }
   /*FOOTER*/
   footer {

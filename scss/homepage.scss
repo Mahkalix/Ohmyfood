@@ -349,54 +349,54 @@ header {
         flex-direction: column;
         align-items: center;
         margin-bottom: 44px;
+        padding-left:17px;
+        padding-right: 17px;
 
 
         .card-heart {
+            display: flex;
+            flex-direction: column;
+            height: 251px;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            margin-bottom: 20px;
             position: relative;
-
             a {
                 text-decoration: none;
                 color: black;
+                width: 100%;
 
-                .card-without-heart {
-                    display: flex;
-                    flex-direction: column;
-                    height: 251px;
+                .img {
+                    object-fit: cover;
+                    height: 185px;
                     width: 100%;
-                    background: #FFFFFF;
-                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                    border-radius: 15px;
-                    margin-bottom: 20px;
+                    border-radius: 15px 15px 0 0;
+                }
 
-                    .img {
-                        object-fit: cover;
-                        height: 185px;
-                        width: 335px;
-                        border-radius: 15px 15px 0 0;
+                .text-card {
+                    display: flex;
+                    margin-top: 5px;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin-left: 12.81px;
+                        margin-bottom: 5px;
+
+
                     }
 
-                    .text-card {
-                        display: flex;
-                        height: 100%;
-                        flex-direction: column;
-                        justify-content: center;
+                    p {
+                        font-size: 17px;
+                        font-weight: 300;
+                        margin-left: 12.81px;
 
-                        h2 {
-                            font-size: 18px;
-                            font-weight: 700;
-                            margin-left: 12.81px;
-                            margin-bottom: 5px;
-
-
-                        }
-
-                        p {
-                            font-size: 17px;
-                            font-weight: 300;
-                            margin-left: 12.81px;
-
-                        }
                     }
+
                 }
             }
 
@@ -406,20 +406,18 @@ header {
                 right: 14px;
             }
 
-
             .heart-animation {
                 .heart {
                     visibility: visible;
                     position: absolute;
-                    top: 197px;
-                    right: 25px;
+                    right: 14px;
+                    top: 200px;
                 }
 
                 .full-heart {
                     visibility: hidden;
                     position: absolute;
-                    top: 197px;
-                    right: 25px;
+                    top: 10px;
                     opacity: 0;
                 }
             }
@@ -427,13 +425,14 @@ header {
             .heart-animation:hover {
                 .heart {
                     visibility: hidden;
-                    position: absolute;
                     cursor: pointer;
+                    top: 10px;
                 }
 
                 .full-heart {
                     visibility: visible;
-                    position: absolute;
+                    top: 10px;
+
                     transition: 1.5s;
                     opacity: 1;
                     cursor: pointer;
@@ -534,7 +533,7 @@ footer {
     /*RESTAURANTS*/
 
     .restaurants-cards::-webkit-scrollbar {
-        
+
         height: 10px;
         background-color: #F5EDFF;
     }
@@ -545,7 +544,7 @@ footer {
     }
 
     .restaurants-cards::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
         background-color: #F5F5F5;
     }
@@ -568,10 +567,32 @@ footer {
 
             .card-heart {
                 margin-right: 30px;
+                height: 251px;
+                width: 335px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    .img {
+                        object-fit: cover;
+                        height: 185px;
+                        width: 335px;
+                        border-radius: 15px 15px 0 0;
+                    }
+
+                }
             }
         }
     }
 }
+
 
 
 /*DESKTOP*/
@@ -613,7 +634,7 @@ footer {
     }
 
     /*RESTAURANTS*/
-    
+
     .restaurants-cards::-webkit-scrollbar {
         height: 10px;
         background-color: #F5EDFF;
@@ -640,13 +661,35 @@ footer {
         .restaurants-cards {
             display: flex;
             flex-direction: row;
-            margin: 0 0 44px 193px;
+            margin-left: 20px;
             overflow: scroll;
             overflow-y: hidden;
+            margin: 0 0 44px 193px;
 
 
             .card-heart {
                 margin-right: 30px;
+                height: 251px;
+                width: 335px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    .img {
+                        object-fit: cover;
+                        height: 185px;
+                        width: 335px;
+                        border-radius: 15px 15px 0 0;
+                    }
+
+                }
             }
         }
     }
