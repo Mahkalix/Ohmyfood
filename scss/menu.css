@@ -14,6 +14,11 @@ body {
   min-width: 375px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -238,12 +243,16 @@ main .section-order {
   justify-content: center;
 }
 main .btn-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 186px;
   border-radius: 25px;
   color: white;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: Roboto;
   text-align: center;
   margin: 40px 0 40px 0;
   border: transparent;
