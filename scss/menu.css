@@ -55,7 +55,6 @@ header .arrow {
   display: flex;
 }
 .img-container .img {
-  -o-object-fit: cover;
      object-fit: cover;
   height: 275px;
   width: 100%;
@@ -217,7 +216,7 @@ main .menu .card .btn-check {
 main .menu .card .btn-check .check {
   width: 20px;
   height: 20px;
-  transform: rotate(360 deg);
+  transform: rotate(360deg);
 }
 main .menu .card:hover .price {
   margin-right: 77px;
