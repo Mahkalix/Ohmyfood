@@ -1,3 +1,10 @@
+$ligh-purple: #F5EDFF !default;
+$purple:#9356DC !default;
+$grey-background: #F7F7F7 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+
+
 *,
 ::after,
 ::before {
@@ -7,6 +14,7 @@
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: "Raleway", sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -15,7 +23,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: $white;
 
 }
 
@@ -26,7 +34,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F5EDFF;
+    background-color: $ligh-purple;
     width: 100%;
     position: fixed;
     inset: 0;
@@ -187,7 +195,7 @@ header {
     padding-bottom: 57px;
     padding-left: 17px;
     padding-right: 17px;
-    background-color: #F7F7F7;
+    background-color: $grey-background;
 
 
     h1 {
@@ -213,21 +221,21 @@ header {
         height: 50px;
         width: 218px;
         border-radius: 25px;
-        color: white;
+        color: $white;
         font-size: 16px;
         font-weight: 400;
         text-align: center;
         margin-top: 27px;
         border: transparent;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+        background: linear-gradient(-10deg, $purple -5.2%, #FF79DA 110.74%);
     }
 
     .btn-explore:hover {
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.486);
         transform: scale(1.06);
         transition: transform 1s ease-in-out;
-        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        background: linear-gradient(200.64deg, $purple -5.2%, #FF79DA 110.74%);
         cursor: pointer;
     }
 }
@@ -257,22 +265,22 @@ header {
 
 
         .btn-section:hover .icon-smartphone {
-            fill: #9356DC;
+            fill: $purple;
             transform: scale(1.1);
         }
 
         .btn-section:hover .icon-menu {
-            fill: #9356DC;
+            fill: $purple;
             transform: scale(1.1);
         }
 
         .btn-section:hover .icon-shop {
-            fill: #9356DC;
+            fill: $purple;
             transform: scale(1.1);
         }
 
         .btn-section:hover {
-            background-color: #F5EDFF;
+            background-color: $ligh-purple;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
         }
 
@@ -286,13 +294,13 @@ header {
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
             margin-bottom: 22px;
-            background: #F6F6F6;
+            background: $grey-background;
 
             .btn-num {
                 position: absolute;
                 width: 24px;
                 height: 24px;
-                fill: #9356DC;
+                fill: $purple;
                 top: 50%;
                 left: 1%;
                 transform: translate(-50%, -50%);
@@ -339,7 +347,7 @@ header {
 .restaurants-section {
     display: flex;
     flex-direction: column;
-    background-color: #F7F7F7;
+    background-color: $grey-background;
 
     h1 {
         font-size: 24px;
@@ -363,14 +371,14 @@ header {
             flex-direction: column;
             height: 251px;
             width: 100%;
-            background: #FFFFFF;
+            background: $white;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
             margin-bottom: 20px;
             position: relative;
             a {
                 text-decoration: none;
-                color: black;
+                color:$black;
                 width: 100%;
 
                 .img {
@@ -478,7 +486,7 @@ footer {
             p {
                 font-family: Roboto;
                 margin-bottom: 7px;
-                color: white;
+                color: $white;
             }
 
             .bottom {
@@ -543,18 +551,18 @@ footer {
     .restaurants-cards::-webkit-scrollbar {
 
         height: 10px;
-        background-color: #F5EDFF;
+        background-color: $ligh-purple;
     }
 
     .restaurants-cards::-webkit-scrollbar-thumb {
         border-radius: 20px;
-        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+        background: linear-gradient(-10deg, $purple -5.2%, #FF79DA 110.74%);
     }
 
     .restaurants-cards::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
         border-radius: 10px;
-        background-color: #F5F5F5;
+        background-color: $grey-background;
     }
 
     .restaurants-section {
@@ -580,13 +588,13 @@ footer {
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: column;
-                background: #FFFFFF;
+                background: $white;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                 border-radius: 15px;
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color:$black;
 
                     .img {
                         object-fit: cover;
@@ -645,17 +653,17 @@ footer {
 
     .restaurants-cards::-webkit-scrollbar {
         height: 10px;
-        background-color: #F5EDFF;
+        background-color: $ligh-purple;
     }
 
     .restaurants-cards::-webkit-scrollbar-thumb {
         border-radius: 20px;
-        background: linear-gradient(-10deg, #9356DC -5.2%, #FF79DA 110.74%);
+        background: linear-gradient(-10deg, $purple -5.2%, #FF79DA 110.74%);
     }
 
     .restaurants-cards::-webkit-scrollbar-track {
         border-radius: 10px;
-        background-color: #F5F5F5;
+        background-color: $grey-background;
     }
 
     .restaurants-section {
@@ -682,13 +690,13 @@ footer {
                 margin-bottom: 20px;
                 display: flex;
                 flex-direction: column;
-                background: #FFFFFF;
+                background: $white;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                 border-radius: 15px;
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color:$black;
 
                     .img {
                         object-fit: cover;
