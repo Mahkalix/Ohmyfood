@@ -100,12 +100,12 @@ main .blank {
   background-color: #F6F6F6;
 }
 main .title-heart {
-  width: 400px;
+  width: 370px;
   display: flex;
   position: relative;
-  justify-content: center;
 }
 main .title-heart h1 {
+  padding-left: 17px;
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
@@ -114,13 +114,13 @@ main .title-heart .heart-animation .heart {
   visibility: visible;
   position: absolute;
   top: 8px;
-  right: 20px;
+  right: 41px;
 }
 main .title-heart .heart-animation .full-heart {
   visibility: hidden;
   position: absolute;
   top: 8px;
-  right: 20px;
+  right: 41px;
   opacity: 0;
 }
 main .title-heart .heart-animation:hover .heart {

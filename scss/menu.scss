@@ -125,12 +125,12 @@ main {
     }
 
     .title-heart {
-        width: 400px;
+        width: 370px;
         display: flex;
         position: relative;
-        justify-content: center;
 
         h1 {
+            padding-left: 17px;
             font-family: Shrikhand;
             font-size: 28px;
             font-weight: 400;
@@ -142,14 +142,14 @@ main {
                 visibility: visible;
                 position: absolute;
                 top: 8px;
-                right: 20px;
+                right: 41px;
             }
 
             .full-heart {
                 visibility: hidden;
                 position: absolute;
                 top: 8px;
-                right: 20px;
+                right: 41px;
                 opacity: 0;
             }
         }
