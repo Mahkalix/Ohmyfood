@@ -43,7 +43,7 @@ a {
 .loader .card-loader .word {
   margin-top: 20px;
   font-size: 12px;
-  animation: fontAnim 2s ease-in-out infinite;
+  animation: fontAnim 2s linear infinite;
 }
 
 @keyframes fontAnim {

@@ -21,18 +21,6 @@ a {
 
 }
 
-@keyframes rotate {
-
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
-
 /*HEADER*/
 
 header {
@@ -256,19 +244,6 @@ main {
                 position: absolute;
                 right: 0;
                 display: none;
-                height: 69px;
-                width: 59px;
-                background-color: #99E2D0;
-                border-radius: 0px 15px 15px 0px;
-                align-items: center;
-                justify-content: center;
-                transition: 0.8s ease-in-out;
-
-                .check {
-                    width: 20px;
-                    height: 20px;
-                    transform: rotate(360 deg);
-                }
             }
 
         }
@@ -286,6 +261,7 @@ main {
                 border-radius: 0px 15px 15px 0px;
                 align-items: center;
                 justify-content: center;
+              
 
 
                 .check {
@@ -294,12 +270,21 @@ main {
                     animation-name: rotate;
                     animation-duration: 1s;
                     animation-timing-function: ease-in-out;
-
                 }
             }
         }
     }
+    @keyframes rotate {
 
+        0% {
+            transform: rotate(0);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    
+    }
     /*BTN ORDER*/
 
     .section-order {
