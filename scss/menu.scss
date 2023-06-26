@@ -76,23 +76,23 @@ header {
     }
 
     100% {
-        transform: translateX(0px);
+        transform: translateX(0%);
         opacity: 1;
     }
 }
 
 .starter {
 
-    animation: menu 3s ease-in-out forwards;
+    animation: menu 2s ease-in-out forwards;
 }
 
 .main-course {
-    animation: menu 4s ease-in-out forwards;
+    animation: menu 3s ease-in-out forwards;
 
 }
 
 .dessert {
-    animation: menu 5s ease-in-out forwards;
+    animation: menu 4s ease-in-out forwards;
 
 }
 
